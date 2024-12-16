@@ -1,14 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { MatSliderModule } from '@angular/material/slider';
-import {MatCardModule} from '@angular/material/card';
+// import { RouterOutlet } from '@angular/router';
+
+import { ProvaComponent } from './prova/prova.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,MatSliderModule,MatCardModule],
+  standalone: true,
+  imports: [
+    ProvaComponent
+  ],
+
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'corso-angular';
+  // title = 'corso-angular';
 }
